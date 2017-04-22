@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html class='no-js'>
+  <head>
+    <title>Mallia&trade; - Express Yourself Like Never Before</title>
+    <meta name="viewport" content="initial-scale=1">
+    <meta charset='utf-8' />
+    <script src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+    <script src='http://code.jquery.com/ui/1.10.0/jquery-ui.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'></script>
+    <!-- jQuery -->
+    <!-- %script{:src => "javascripts/jcoverflip.js"} -->
+    <!-- bxSlider -->
+    <script src='javascripts/bxSlider.js'></script>
+    <script src='javascripts/easing.js'></script>
+    <!-- jQuery UI -->
+    <!-- %script{:src=>"javascripts/jquery-ui-1.9.2.custom.min.js"} -->
+    <link href='stylesheets/jquery-ui-1.7.2.custom.css' media='screen' rel='stylesheet' type='text/css' />
+    <!-- Roundabout -->
+    <script src='javascripts/jquery.roundabout.js'></script>
+    <!-- Colorbox -->
+    <script src='javascripts/colorbox.js'></script>
+    <link href='stylesheets/colorbox/colorbox.css' media='screen' rel='stylesheet' type='text/css' />
+    <!-- JQuery SuperScrollarama -->
+    <script src='javascripts/jquery.superscrollorama.js'></script>
+    <!-- Caroufredsel -->
+    <script src='http://cdn.jsdelivr.net/caroufredsel/6.1.0/jquery.carouFredSel-6.1.0-packed.js'></script>
+    <script src='http://cdn.jsdelivr.net/caroufredsel/6.1.0/helper-plugins/jquery.touchSwipe.min.js'></script>
+    <!-- jQuery Qtip -->
+    <link href='javascripts/qtip/jquery.qtip.css' rel='stylesheet' />
+    <script src='javascripts/qtip/jquery.qtip.min.js'></script>
+    <!-- Mousewheel -->
+    <script src='javascripts/jquery.mousewheel.min.js'></script>
+    <!-- Jquery ImageLoaded -->
+    <script src='javascripts/jquery.imagesloaded.js'></script>
+    <!-- Tweenlite -->
+    <script src='javascripts/TweenMax.min.js'></script>
+    <script src='javascripts/gs-plugins/ScrollToPlugin.min.js'></script>
+    <!-- jQuery Draggable -->
+    <script src='javascripts/jquery.ui.touch-punch.js'></script>
+    <!-- Respond -->
+    <script src='javascripts/jsmediaqueries.js'></script>
+    <!-- Bootstrap -->
+    <link href='stylesheets/bootstrap.css' media='screen' rel='stylesheet' type='text/css' />
+    <!-- Nice Scroll -->
+    <script src='javascripts/nicescroll.js'></script>
+    <!-- Chosen -->
+    <script src='javascripts/chosen/chosen.jquery.min.js'></script>
+    <link href='javascripts/chosen/chosen.css' rel='stylesheet' />
+    <!-- Main -->
+    <link href='stylesheets/screen.css' media='screen' rel='stylesheet' type='text/css' />
+    <!-- Watch -->
+    <script src='javascripts/jquery.watch.js'></script>
+    <script src='javascripts/scripts.js'></script>
+  </head>
+  <body class='look'>
+    <div class='container'>
+      <div class='content-wrapper'>
+        <div class='logo'>
+          <a href='http://www.legrand.com.sg/products/wiring-devices/' target='_blank'>
+            <h1>Legrand&reg;</h1>
+          </a>
+        </div>
+        <div class='content'>
+          <div class='look-wrapper'>
+  <a href='#select' id='next-button'>Next</a>
+  <a href='#' id='back-to-top'>Back to top</a>
+  <div id='prompt'>
+    <p class='tiny scroll'>Please scroll down to continue <span>&darr;</span></p>
+    <p class='tiny swipe'>Please swipe down to continue <span>&darr;</span></p>
+  </div>
+  <div class='help'>
+    <div class='pagination hide'>
+      <img src='images/look/parallax/help-kb.png' />
+      <p>Use the on screen prompts or your keyboard arrows to navigate around.</p>
+      <hr />
+      <img src='images/look/parallax/help-mouse.png' />
+      <p>Or you can just use your mouse's scroll wheel!</p>
+      <!-- .up -->
+      <!-- %img{:src=>"images/look/parallax/help/arr-up.png", :width=>"20", :height=>"20"} -->
+      <!-- .left -->
+      <!-- %img{:src=>"images/look/parallax/help/arr-left.png", :width=>"20", :height=>"20"} -->
+      <!-- .down -->
+      <!-- %img{:src=>"images/look/parallax/help/arr-down.png", :width=>"20", :height=>"20"} -->
+      <!-- .right -->
+      <!-- %img{:src=>"images/look/parallax/help/arr-right.png", :width=>"20", :height=>"20"} -->
+      <div class='clearfix'></div>
+    </div>
+    <div alt='hello' class='help-icon'><em style="font: italic 14px Georgia, sans-serif; color: #fff">i</em></div>
+  </div>
+  <div class='switch draggable'>
+    <div class='target'></div>
+    <div class='caption'>
+      <span>Pearl</span>
+    </div>
+    <div class='moveable'></div>
+    <div class='moveable-text'>
+      <span>Click and move the switch around!</span>
+    </div>
+    <div class='moveable-text-ipad'>
+      <span>Touch and move the switch around!</span>
+    </div>
+  </div>
+  <div class='switch-holder'>
+    <p class='info'>Reset Position</p>
+  </div>
+  <div class='scroll' id='parallax-wrapper'>
+    <div id='parallax'>
+      <div id='switch1'>
+        <div class='copy'>
+          <h3>Always the<br/>Crowd Pleaser</h3>
+          <div class='para-wrapper'>
+            <p>Mallia&trade; fits right in &ndash; whatever your choice of furnishings.</p>
+          </div>
+        </div>
+      </div>
+      <div id='switch2'>
+        <div class='copy'>
+          <h3 id='switch2-header'>Perfect for Your Personal Style</h3>
+          <div class='para-wrapper' id='switch2-body'>
+            <p>With a character and an identity of its own, Mallia&trade; complements your unique taste and lifestyle.</p>
+          </div>
+        </div>
+      </div>
+      <div id='switch3'>
+        <div class='copy'>
+          <h3 id='switch3-header'>Express yourself like never before</h3>
+          <div class='para-wrapper' id='switch3-body'>
+            <p>Seeing is believing. Get inspired &ndash; mix and match Mallia&trade; with an ambience of your choice.</p>
+          </div>
+        </div>
+      </div>
+      <div class='select-panel current' id='select'>
+        <div class='target'></div>
+        <!-- .background-overlay.hide -->
+        <!-- %p -->
+        <!-- %a.close Close &times; -->
+        <div class='box' id='switch-box'>
+          <div class='select-ui'>
+            <a href='' id='toggle-panel'>-</a>
+            <p id='toggle-text'>I want to change my</p>
+            <div class='toggle'><a class="active sw" href="#malia">Malia&trade;</a> | <a class="bg" href="#surround">Ambience</a></div>
+            <p id='reveal-text'>Change your Malia&trade; | Ambience</p>
+          </div>
+          <div class='mask'>
+            <div class='panel-container'>
+              <div class='panel' id='panel-1'>
+                <div class='prev'>
+                  &laquo;
+                </div>
+                <div class='next'>
+                  &raquo;
+                </div>
+                <ul>
+                  <li>
+                    <a class='active' data-image='sw01' data-target='1' href='#' title='Pearl'>
+                      <img height='70' src='images/look/parallax/sw01.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw14' data-target='14' href='#' title='White'>
+                      <img height='70' src='images/look/parallax/sw14.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw16' data-target='16' href='#' title='Silver'>
+                      <img height='70' src='images/look/parallax/sw16.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw02' data-target='2' href='#' title='Dark Silver'>
+                      <img height='70' src='images/look/parallax/sw02.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw03' data-target='3' href='#' title='Gold/Pearl'>
+                      <img height='70' src='images/look/parallax/sw03.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw06' data-target='6' href='#' title='Polished Stainless Steel/Silver'>
+                      <img height='70' src='images/look/parallax/sw06.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw15' data-target='15' href='#' title='Brushed Stainless Steel/Silver'>
+                      <img height='70' src='images/look/parallax/sw15.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw04' data-target='4' href='#' title='Lacquered Black/Dark Silver'>
+                      <img height='70' src='images/look/parallax/sw04.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw05' data-target='5' href='#' title='Champagne/Silver'>
+                      <img height='70' src='images/look/parallax/sw05.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw07' data-target='7' href='#' title='Copper/Pearl'>
+                      <img height='70' src='images/look/parallax/sw07.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw08' data-target='8' href='#' title='Brass/Dark Silver'>
+                      <img height='70' src='images/look/parallax/sw08.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw09' data-target='9' href='#' title='Silver/Pearl'>
+                      <img height='70' src='images/look/parallax/sw09.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw10' data-target='10' href='#' title='Bronze/Silver'>
+                      <img height='70' src='images/look/parallax/sw10.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw11' data-target='11' href='#' title='Pearl/Silver'>
+                      <img height='70' src='images/look/parallax/sw11.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw12' data-target='12' href='#' title='Matt Black/Pearl'>
+                      <img height='70' src='images/look/parallax/sw12.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-image='sw13' data-target='13' href='#' title='Customised'>
+                      <img height='70' src='images/look/parallax/sw13.png' width='70' />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class='panel' id='panel-2'>
+                <div class='prev'>
+                  &laquo;
+                </div>
+                <div class='next'>
+                  &raquo;
+                </div>
+                <ul>
+                  <li>
+                    <a data-target='1' href='#'>
+                      <img height='70' src='images/look/parallax/sw01.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-target='2' href='#'>
+                      <img height='70' src='images/look/parallax/sw02.png' width='70' />
+                    </a>
+                  </li>
+                  <li>
+                    <a data-target='3' href='#'>
+                      <img height='70' src='images/look/parallax/sw03.png' width='70' />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='hide'>
+  <div class='bg-set-1'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv08' href='#'>
+        <img height='65' src='images/look/parallax/lv08.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv09' href='#'>
+        <img height='65' src='images/look/parallax/lv09.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv11' href='#'>
+        <img height='65' src='images/look/parallax/lv11.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv13' href='#'>
+        <img height='65' src='images/look/parallax/lv13.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv14' href='#'>
+        <img height='65' src='images/look/parallax/lv14.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv15' href='#'>
+        <img height='65' src='images/look/parallax/lv15.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv16' href='#'>
+        <img height='65' src='images/look/parallax/lv16.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-2'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv06' href='#'>
+        <img height='65' src='images/look/parallax/lv06.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-3'>
+    <li>
+      <a data-target='lv05' href='#'>
+        <img height='65' src='images/look/parallax/lv05.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv13' href='#'>
+        <img height='65' src='images/look/parallax/lv13.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-4'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv06' href='#'>
+        <img height='65' src='images/look/parallax/lv06.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-5'>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv05' href='#'>
+        <img height='65' src='images/look/parallax/lv05.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv08' href='#'>
+        <img height='65' src='images/look/parallax/lv08.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-6'>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-7'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv09' href='#'>
+        <img height='65' src='images/look/parallax/lv09.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-8'>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv08' href='#'>
+        <img height='65' src='images/look/parallax/lv08.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv13' href='#'>
+        <img height='65' src='images/look/parallax/lv13.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-9'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv06' href='#'>
+        <img height='65' src='images/look/parallax/lv06.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv09' href='#'>
+        <img height='65' src='images/look/parallax/lv09.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv11' href='#'>
+        <img height='65' src='images/look/parallax/lv11.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv14' href='#'>
+        <img height='65' src='images/look/parallax/lv14.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv16' href='#'>
+        <img height='65' src='images/look/parallax/lv16.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-10'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv06' href='#'>
+        <img height='65' src='images/look/parallax/lv06.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv08' href='#'>
+        <img height='65' src='images/look/parallax/lv08.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv11' href='#'>
+        <img height='65' src='images/look/parallax/lv11.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv13' href='#'>
+        <img height='65' src='images/look/parallax/lv13.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-11'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv08' href='#'>
+        <img height='65' src='images/look/parallax/lv08.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv09' href='#'>
+        <img height='65' src='images/look/parallax/lv09.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv11' href='#'>
+        <img height='65' src='images/look/parallax/lv11.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv13' href='#'>
+        <img height='65' src='images/look/parallax/lv13.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv14' href='#'>
+        <img height='65' src='images/look/parallax/lv14.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv15' href='#'>
+        <img height='65' src='images/look/parallax/lv15.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv16' href='#'>
+        <img height='65' src='images/look/parallax/lv16.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-12'>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv06' href='#'>
+        <img height='65' src='images/look/parallax/lv06.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv11' href='#'>
+        <img height='65' src='images/look/parallax/lv11.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-13'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv06' href='#'>
+        <img height='65' src='images/look/parallax/lv06.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv12' href='#'>
+        <img height='65' src='images/look/parallax/lv12.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-14'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv05' href='#'>
+        <img height='65' src='images/look/parallax/lv05.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv06' href='#'>
+        <img height='65' src='images/look/parallax/lv06.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv09' href='#'>
+        <img height='65' src='images/look/parallax/lv09.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv11' href='#'>
+        <img height='65' src='images/look/parallax/lv11.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv14' href='#'>
+        <img height='65' src='images/look/parallax/lv14.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv15' href='#'>
+        <img height='65' src='images/look/parallax/lv15.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv16' href='#'>
+        <img height='65' src='images/look/parallax/lv16.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-15'>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+  <div class='bg-set-16'>
+    <li>
+      <a data-target='lv01' href='#'>
+        <img height='65' src='images/look/parallax/lv01.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv02' href='#'>
+        <img height='65' src='images/look/parallax/lv02.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv03' href='#'>
+        <img height='65' src='images/look/parallax/lv03.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv04' href='#'>
+        <img height='65' src='images/look/parallax/lv04.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv05' href='#'>
+        <img height='65' src='images/look/parallax/lv05.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv07' href='#'>
+        <img height='65' src='images/look/parallax/lv07.jpg' width='70' />
+      </a>
+    </li>
+    <li>
+      <a data-target='lv10' href='#'>
+        <img height='65' src='images/look/parallax/lv10.jpg' width='70' />
+      </a>
+    </li>
+  </div>
+</div>
+        </div>
+        <nav>
+          <div class='nav-wrapper'>
+  <a href='index.html'>
+    <div class='nav-switch'></div>
+  </a>
+  <div class='nav-btn'>
+    <hr />
+    <div class='navigation'>
+      <ul>
+        <li>
+          <a class='look' href='look.html'>Look</a>
+        </li>
+        <li>
+          <a class='touch' href='touch.html'>Touch</a>
+        </li>
+        <li>
+          <a class='love' href='love.html'>Love</a>
+        </li>
+        <li>
+          <a class='config' href='config.html'>
+            <img alt='' height='30' src='images/nav/config.png' width='30' />
+            <br/>
+            <span>Your desired switch</span>
+          </a>
+        </li>
+        <li class='prev'>
+          <a href='#'>&larr;<br/><span>Prev</span></a>
+        </li>
+        <li class='next last'>
+          <a>&rarr;<br/><span>Next</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class='download'>
+      <h3>
+        <a href='downloads/mallia.pdf'>
+          <img alt='' height='30' src='images/nav/dl.png' width='30' />
+          <br/>
+          <span>Brochure</span>
+        </a>
+      </h3>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+</div>
+          <div class='clearfix'></div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
